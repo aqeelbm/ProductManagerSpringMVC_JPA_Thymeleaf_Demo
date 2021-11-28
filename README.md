@@ -10,12 +10,12 @@ A database to store, update and delete records.
 
 ### Steps to Configure App
 
-**1-Clone the app**
+**1: Clone the app**
 ```
-git clone 
+git clone https://github.com/aqeelbm/ProductManagerSpringMVC_JPA_Thymeleaf_Demo.git
 ```
 
-**2-Create MySql database**
+**2: Create MySql database**
 ```
 create database productdb
 ```
@@ -32,13 +32,17 @@ CREATE TABLE productdb.product (
 ```
 
 
-**3-Change MySql credentials**
+**3: Change MySql credentials**
 
 - Open ``` src/main/resources/db.properties ```
 - Change ``` spring.datasource.username=``` and ```spring.datasource.password=```
 
 
-4-Build and run the app using maven
+**4: Build and run the app using maven**
 ```
 Man package
 ```
+A new jar file will be generated at ``` project/target/ProductManager-0.0.1-SNAPSHOT.jar ```
+copy this jar file and deploy in your Tomcat server ``` apache-tomcat/webapps/ ```
+
+This app will start running at http://localhost:8080/
